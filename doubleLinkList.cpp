@@ -81,8 +81,11 @@ class doubleLinkedList
             }
         }else{
             current -> prev -> next = current -> next;
-            if (currents)
-            
+            if (currents -> next -> !=NULL){
+                current  -> next -> prev = current ->prev;
+            }
         }
+        delete current;
+        cout "record with roll number " << rollNo << "deleted" << endl;
         }
 }
