@@ -69,8 +69,20 @@ class doubleLinkedList
             }
             
             if (current == NULL){
-                cout << " record "
+                cout << " Record Not Found" << endl;
+                return;
             }
+            
+            if (curent == START){
+                START = current -> next;
+                if (START != NULL){
+                    START -> prev = NULL;
+                }
+            }
+        }else{
+            current -> prev -> next = current -> next;
+            if (currents)
+            
         }
         }
 }
