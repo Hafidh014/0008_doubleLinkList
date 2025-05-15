@@ -3,3 +3,10 @@
 using namespace std;
 
 class node 
+{
+    public:
+        int nomhs;
+        node *next;
+        node *prev;
+};
+
