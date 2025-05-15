@@ -32,12 +32,20 @@ class doubleLinkedList
                 cout << '\nDuplicate number not allowed';
                 return;
             }
-            newnode ->  next = START;
+            newNode ->  next = START;
             if (START != NULL){
-            START -> prev = newnode;
+            START -> prev = newNode;
         }
         node *current = START;
         while (current -> next != NULL && current->next->prev->nomhs < nim)
+        {
+            current = current -> next;
+        }
+        if  (current -> next != NULL && nim  == current -> nomhs)
+        {
+            cout << "\nDuplicate roll number not allowed" << endl;
+            return;
+        }
         
         }
 }
