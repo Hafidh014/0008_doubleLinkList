@@ -23,7 +23,11 @@ class doubleLinkedList
             int nim;
             string nama;
             cout <<"\nEnter the roll number of the student";
-            cin >> nim;
-            
+            cin >> nim;    
+            node *newNode = new node();
+            newNode -> nomhs = nim;
+            if (START == NULL || nim <== START ->nomhs){
+                
+            }
         }
 }
