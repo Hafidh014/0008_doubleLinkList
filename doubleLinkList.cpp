@@ -26,10 +26,13 @@ class doubleLinkedList
             cin >> nim;    
             node *newNode = new node();
             newNode -> nomhs = nim;
-            if (START == NULL || nim <== START ->nomhs)
+            if (START == NULL || nim <= START ->nomhs)
+                if (START != NULL && nim == START ->nomhs)          
             {
                 cout << '\nDuplicate number not allowed';
                 return;
             }
+            newnode ->  next = START;
+            
         }
 }
