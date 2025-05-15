@@ -10,3 +10,17 @@ class node
         node *prev;
 };
 
+class doubleLinkedList
+{
+    private:
+        node *START;
+
+    public:
+        doubleLinkedList(){
+                START = NULL;
+        }
+        void addnode(){
+            int nim;
+            string nama;
+        }
+}
