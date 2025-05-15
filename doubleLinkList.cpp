@@ -55,8 +55,21 @@ class doubleLinkedList
 
         void hapus(){
             if (START == NULL){
-                cout << '\n. list is empty' << endl;
+                cout << '\nlist is empty' << endl;
                 Return;
+            }
+            cout << "\nEnter ummber You Delete: ";
+            int rollNo;
+            cin >> rollNo;
+
+            node *current = START;
+            While (current != NULL && current -> nomhs != rollNo)
+            {
+                current = current -> next;
+            }
+            
+            if (current == NULL){
+                cout << " record "
             }
         }
         }
