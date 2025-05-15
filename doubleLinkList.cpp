@@ -33,6 +33,11 @@ class doubleLinkedList
                 return;
             }
             newnode ->  next = START;
-            
+            if (START != NULL){
+            START -> prev = newnode;
+        }
+        node *current = START;
+        while (current -> next != NULL && current->next->prev->nomhs < nim)
+        
         }
 }
