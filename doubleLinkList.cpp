@@ -22,5 +22,8 @@ class doubleLinkedList
         void addnode(){
             int nim;
             string nama;
+            cout <<"\nEnter the roll number of the student";
+            cin >> nim;
+            
         }
 }
